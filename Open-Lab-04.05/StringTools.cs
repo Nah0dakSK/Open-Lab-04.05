@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Text;
 
 namespace Open_Lab_04._05
 {
@@ -6,7 +8,7 @@ namespace Open_Lab_04._05
     {
         public string Repeat(string orig, int n)
         {
-            throw new NotImplementedException();
+            return new String(Enumerable.Range(0, n).SelectMany(x => orig).ToArray());
         }
     }
 }
